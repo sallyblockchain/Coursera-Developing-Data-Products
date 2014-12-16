@@ -14,3 +14,5 @@ browseURL("./index.html")
 # publish_github(user, repo)
 
 # HTML5 Deck Framework: Mathjax
+
+# http://xiaodan.github.io/Coursera-Developing-Data-Products/week2/test.html
