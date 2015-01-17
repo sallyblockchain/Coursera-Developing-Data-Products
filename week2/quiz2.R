@@ -54,3 +54,4 @@ sum(1:10)
 # When presenting data analysis to a broad audience, 
 # which of the following should be done?
 # Make the figure axes readable.
+# Explain why each step was necessary.
