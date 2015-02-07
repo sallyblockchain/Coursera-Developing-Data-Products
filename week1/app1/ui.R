@@ -1,3 +1,5 @@
+library(shiny)
+
 shinyUI(pageWithSidebar(
   headerPanel("Example plot"),
   sidebarPanel(
