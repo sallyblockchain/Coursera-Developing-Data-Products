@@ -3,7 +3,7 @@ library(shiny)
 
 shinyUI(
     navbarPage("LEGO Set Visualizer", # multi-page user-interface that includes a navigation bar.
-        tabPanel("Search", 
+        tabPanel("Basic Search", 
             sidebarPanel(
                 textInput(inputId="text1", label = "Input Text1"),
                 textInput(inputId="text2", label = "Input Text2"),
@@ -17,11 +17,11 @@ shinyUI(
               p('Output text3'),
               textOutput('text3')
             )
-        ), # end of "Search" tab panel
-        tabPanel("Plot",
+        ), # end of "Basic Search" tab panel
+        tabPanel("Explore & Visualize",
              sidebarPanel(
                 sliderInput("timeline", 
-                            "Range:", 
+                            "Timeline:", 
                             min = 1950,
                             max = 2015,
                             value = c(1996, 2015),
@@ -44,7 +44,7 @@ shinyUI(
                  )
                    
             )     
-        ), # end of "Plot" tab panel
+        ), # # end of "Visualize & Explore" tab panel
         
         tabPanel("About",
                  mainPanel(

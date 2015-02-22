@@ -26,10 +26,10 @@ groupByTheme <- function(dt, minYear, maxYear, themes) {
     # use pipelining
     result <- dt %>% filter(year >= minYear, year <= maxYear,
                             theme %in% themes) 
-# The following does not work
-#     fn$sqldf("SELECT * FROM data 
-#          WHERE year >= $minYear and year <= $maxYear
-#          and theme in $themes")
+    # The following does not work
+    #     fn$sqldf("SELECT * FROM data 
+    #          WHERE year >= $minYear and year <= $maxYear
+    #          and theme in $themes")
 
     #return(data.table(result))
 }

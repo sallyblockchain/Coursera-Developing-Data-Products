@@ -20,7 +20,7 @@ shinyServer(
     
     # Create event type checkbox
     output$themesControl <- renderUI({
-        checkboxGroupInput('themes', 'LEGO Themes', 
+        checkboxGroupInput('themes', 'LEGO Themes:', 
                            themes, selected = values$themes)
     })
     
