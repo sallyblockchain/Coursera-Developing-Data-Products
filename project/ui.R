@@ -1,34 +1,56 @@
 # The user-interface definition of the Shiny web app.
 library(shiny)
 
-shinyUI(pageWithSidebar(
-  headerPanel("Hello Shiny!"),
-  tabPanel("Plot",
-           sidebarPanel(
-             textInput(inputId="text1", label = "Input Text1"),
-             textInput(inputId="text2", label = "Input Text2"),
-             actionButton("goButton", "Go!")
-           ),
-           mainPanel(
-             p('Output text1'),
-             textOutput('text1'),
-             p('Output text2'),
-             textOutput('text2'),
-             p('Output text3'),
-             textOutput('text3'),
-             tabsetPanel(
-               # Data 
-               tabPanel(p(icon("table"), "Data"),
-                        dataTableOutput(outputId="table"),
-                        downloadButton('downloadData', 'Download')
-               )
-             )
-             
-           )     
-  ),
-  tabPanel("About",
-           mainPanel(
-             includeMarkdown("about.md")
-           )
-  )
-))
+shinyUI(
+    navbarPage("LEGO Set Visualizer", # multi-page user-interface that includes a navigation bar.
+        tabPanel("Search", 
+            sidebarPanel(
+                textInput(inputId="text1", label = "Input Text1"),
+                textInput(inputId="text2", label = "Input Text2"),
+                actionButton("goButton", "Go!")
+            ),
+            mainPanel(
+              p('Output text1'),
+              textOutput('text1'),
+              p('Output text2'),
+              textOutput('text2'),
+              p('Output text3'),
+              textOutput('text3')
+            )
+        ), # end of "Search" tab panel
+        tabPanel("Plot",
+             sidebarPanel(
+                sliderInput("timeline", 
+                            "Range:", 
+                            min = 1950,
+                            max = 2015,
+                            value = c(1996, 2015),
+                            format = "####"),
+                uiOutput("themesControl"), # the id
+                actionButton(inputId = "clearAll", 
+                             label = "Clear selection", 
+                             icon = icon("square-o")),
+                actionButton(inputId = "selectAll", 
+                             label = "Select all", 
+                             icon = icon("check-square-o"))
+        
+             ),
+             mainPanel(
+                 tabsetPanel(
+                   # Data 
+                   tabPanel(p(icon("table"), "Dataset"),
+                            dataTableOutput(outputId="dTable")
+                   )
+                 )
+                   
+            )     
+        ), # end of "Plot" tab panel
+        
+        tabPanel("About",
+                 mainPanel(
+                   includeMarkdown("about.md")
+                 )
+        ) # end of "About" tab panel
+    )
+  
+)
