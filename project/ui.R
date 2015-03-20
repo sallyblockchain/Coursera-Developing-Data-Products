@@ -1,6 +1,11 @@
 # The user-interface definition of the Shiny web app.
 library(shiny)
 library(BH)
+library(rCharts)
+require(markdown)
+require(data.table)
+library(dplyr)
+library(DT)
 
 shinyUI(
     navbarPage("LEGO Set Visualizer", 
@@ -13,7 +18,7 @@ shinyUI(
                             max = 2015,
                             value = c(1996, 2015)),
                 sliderInput("pieces", 
-                            "Pieces:",
+                            "Number of Pieces:",
                             min = -1,
                             max = 5922,
                             value = c(271, 2448) 
