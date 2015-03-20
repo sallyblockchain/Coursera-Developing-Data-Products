@@ -66,11 +66,21 @@ shinyServer(
         groupByTheme(data, input$timeline[1], 
                      input$timeline[2], input$themes)
     })
+
+    dataTableByYear <- reactive({
+        groupByYear(data, input$timeline[1], 
+                    input$timeline[2], input$themes)
+    })
     
     # Render data table
-    output$dTable <- renderDataTable(
-       {dataTable()} #, options = list(bFilter = FALSE, iDisplayLength = 50)
-     )
+    output$dTable <- renderDataTable({
+        dataTable()
+    } #, options = list(bFilter = FALSE, iDisplayLength = 50)
+    )
+    
+    output$themesByYear <- renderChart({
+        plotThemesCountByYear(dataTableByYear())
+    })
     
   } # end of function(input, output)
 )
