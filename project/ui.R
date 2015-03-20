@@ -1,5 +1,6 @@
 # The user-interface definition of the Shiny web app.
 library(shiny)
+library(BH)
 
 shinyUI(
     navbarPage("LEGO Set Visualizer", 
