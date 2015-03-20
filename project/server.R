@@ -7,12 +7,37 @@ themes <- sort(unique(data$theme))
 # Shiny server
 shinyServer(
   function(input, output) {
-    output$text1 <- renderText({input$text1})
-    output$text2 <- renderText({input$text2})
-    output$text3 <- renderText({
-      input$goButton
-      isolate(paste(input$text1, input$text2))
+#     output$text1 <- renderText({input$text1})
+#     output$text2 <- renderText({input$text2})
+#     output$text3 <- renderText({
+#       input$goButton
+#       isolate(paste(input$text1, input$text2))
+#     })
+    output$setid <- renderText({input$setid})
+    
+    output$address <- renderText({
+        input$goButtonAdd
+        isolate(paste("http://brickset.com/sets/", 
+                input$setid, sep=""))
+        
     })
+    
+    output$address2 <- renderText({
+        input$goButtonDirect
+        isolate(browseURL(paste("http://brickset.com/sets/", 
+                                input$setid, sep=""))) 
+    })
+#     observe({
+#         if(length(input$setid) > 0) {
+#             output$address2 <- renderText({
+#                 input$goButtonDirect
+#                 isolate(browseURL(paste("http://brickset.com/sets/", 
+#                                         input$setid, sep=""))) 
+#             })
+#         }
+#              
+#     })
+    
     
     # Initialize reactive values
     values <- reactiveValues()
@@ -30,7 +55,7 @@ shinyServer(
         values$themes <- themes
     })
     
-    # add observer on clear-all button
+    # Add observer on clear-all button
     observe({
         if(input$clearAll == 0) return()
         values$themes <- c() # empty list
@@ -44,8 +69,8 @@ shinyServer(
     
     # Render data table
     output$dTable <- renderDataTable(
-      {dataTable()}, options = list(bFilter = FALSE, iDisplayLength = 50)
-    )
+       {dataTable()} #, options = list(bFilter = FALSE, iDisplayLength = 50)
+     )
     
-  }
+  } # end of function(input, output)
 )

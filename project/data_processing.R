@@ -4,6 +4,7 @@
 require(data.table)
 library(sqldf)
 library(dplyr)
+library(DT)
 
 # Read data
 data <- fread("./data/sets.csv")
@@ -26,6 +27,8 @@ groupByTheme <- function(dt, minYear, maxYear, themes) {
     # use pipelining
     result <- dt %>% filter(year >= minYear, year <= maxYear,
                             theme %in% themes) 
+    result <- datatable(result, options = list(iDisplayLength = 50))
+    return(result)
     # The following does not work
     #     fn$sqldf("SELECT * FROM data 
     #          WHERE year >= $minYear and year <= $maxYear
