@@ -64,12 +64,32 @@ shinyServer(
     # Prepare dataset
     dataTable <- reactive({
         groupByTheme(data, input$timeline[1], 
-                     input$timeline[2], input$themes)
+                     input$timeline[2], input$pieces[1],
+                     input$pieces[2], input$themes)
     })
 
     dataTableByYear <- reactive({
-        groupByYear(data, input$timeline[1], 
-                    input$timeline[2], input$themes)
+        groupByYearAgg(data, input$timeline[1], 
+                    input$timeline[2], input$pieces[1],
+                    input$pieces[2], input$themes)
+    })
+
+    dataTableByPiece <- reactive({
+        groupByYearPiece(data, input$timeline[1], 
+                       input$timeline[2], input$pieces[1],
+                       input$pieces[2], input$themes)
+    })
+
+    dataTableByPieceAvg <- reactive({
+        groupByPieceAvg(data, input$timeline[1], 
+                        input$timeline[2], input$pieces[1],
+                        input$pieces[2], input$themes)
+    })
+
+    dataTableByPieceThemeAvg <- reactive({
+        groupByPieceThemeAvg(data, input$timeline[1], 
+                             input$timeline[2], input$pieces[1],
+                             input$pieces[2], input$themes)
     })
     
     # Render data table
@@ -80,6 +100,18 @@ shinyServer(
     
     output$themesByYear <- renderChart({
         plotThemesCountByYear(dataTableByYear())
+    })
+
+    output$piecesByYear <- renderChart({
+        plotPiecesByYear(dataTableByPiece())
+    })
+
+    output$piecesByYearAvg <- renderChart({
+        plotPiecesByYearAvg(dataTableByPieceAvg())
+    })
+
+    output$piecesByThemeAvg <- renderChart({
+        plotPiecesByThemeAvg(dataTableByPieceThemeAvg())
     })
     
   } # end of function(input, output)

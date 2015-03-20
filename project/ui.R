@@ -11,6 +11,12 @@ shinyUI(
                             min = 1950,
                             max = 2015,
                             value = c(1996, 2015)),
+                sliderInput("pieces", 
+                            "Pieces:",
+                            min = -1,
+                            max = 5922,
+                            value = c(271, 2448) 
+                ),
                             #format = "####"),
                 uiOutput("themesControl"), # the id
                 actionButton(inputId = "clearAll", 
@@ -29,7 +35,15 @@ shinyUI(
                    ), # end of "Dataset" tab panel
                    tabPanel(p(icon("line-chart"), "Visualize the Data"), 
                             h4('Number of Themes by Year', align = "center"),
-                            showOutput("themesByYear", "nvd3")
+                            showOutput("themesByYear", "nvd3"),
+                            h4('Number of Pieces by Year', align = "center"),
+                            h5('Please hover over each point to see the Set Name and ID.', 
+                               align ="center"),
+                            showOutput("piecesByYear", "nvd3"),
+                            h4('Number of Average Pieces by Year', align = "center"),
+                            showOutput("piecesByYearAvg", "nvd3"),
+                            h4('Number of Average Pieces by Theme', align = "center"),
+                            showOutput("piecesByThemeAvg", "nvd3")
                    ) # end of "Visualize the Data" tab panel
 
                  )
