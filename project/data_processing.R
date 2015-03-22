@@ -115,6 +115,16 @@ groupByPieceAvg <- function(dt,  minYear, maxYear, minPiece,
     return(result)      
 }
 
+#' Average pieces for each theme
+#' 
+#' @param dt data.table
+#' @param minYear
+#' @param maxYear
+#' @param minPiece
+#' @param maxPiece
+#' @param themes
+#' @return data.table 2 columns
+#'
 groupByPieceThemeAvg <- function(dt,  minYear, maxYear, minPiece,
                                  maxPiece, themes) {
     dt <- groupByYearPiece(dt, minYear, maxYear, minPiece,

@@ -22,10 +22,10 @@ shinyServer(
         
     })
     
-    output$address2 <- renderText({
+    output$address2 <- renderUI({
         input$goButtonDirect
         isolate(browseURL(paste("http://brickset.com/sets/", 
-                                input$setid, sep=""))) 
+                                input$setid, sep="")))
     })
 #     observe({
 #         if(length(input$setid) > 0) {
