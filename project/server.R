@@ -22,21 +22,22 @@ shinyServer(
         
     })
     
-    output$address2 <- renderUI({
+    getPage<-function(url) {
+        return(tags$iframe(src = url, 
+                           style="width:100%;",  
+                           frameborder="0", id="iframe", 
+                           height = "500px"))
+    }
+    
+#     openPage <- function(url) {
+#         return(tags$a(href=url, "Click here!", target="_blank"))
+#     }
+    
+    output$inc <- renderUI({ 
         input$goButtonDirect
-        isolate(browseURL(paste("http://brickset.com/sets/", 
-                                input$setid, sep="")))
+        isolate(getPage(paste("http://brickset.com/sets/", 
+                              input$setid, sep="")));
     })
-#     observe({
-#         if(length(input$setid) > 0) {
-#             output$address2 <- renderText({
-#                 input$goButtonDirect
-#                 isolate(browseURL(paste("http://brickset.com/sets/", 
-#                                         input$setid, sep=""))) 
-#             })
-#         }
-#              
-#     })
     
     
     # Initialize reactive values

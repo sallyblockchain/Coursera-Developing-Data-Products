@@ -71,10 +71,9 @@ shinyUI(
                  h4("Step 2. Please click the button below. You will be 
                     directed to the above address."),
                  p(""),
-                 #tags$a(href=textOutput("address"), "Click here!")
-                 textOutput("address2"),
-                 actionButton("goButtonDirect", "Go to BrickSet Page for This Set!")
-                 
+                 actionButton("goButtonDirect", "Show BrickSet Page for This Set Below!"),
+                 p(""),
+                 htmlOutput("inc")
              )         
         ),
         
