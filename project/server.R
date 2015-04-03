@@ -22,21 +22,29 @@ shinyServer(
         
     })
     
-    getPage<-function(url) {
-        return(tags$iframe(src = url, 
-                           style="width:100%;",  
-                           frameborder="0", id="iframe", 
-                           height = "500px"))
-    }
-    
-#     openPage <- function(url) {
-#         return(tags$a(href=url, "Click here!", target="_blank"))
+#     getPage<-function(url) {
+#         return(tags$iframe(src = url, 
+#                            style="width:100%;",  
+#                            frameborder="0", id="iframe", 
+#                            height = "500px"))
 #     }
+    
+    openPage <- function(url) {
+        return(tags$a(href=url, "Click here!", target="_blank"))
+    }
     
     output$inc <- renderUI({ 
         input$goButtonDirect
-        isolate(getPage(paste("http://brickset.com/sets/", 
-                              input$setid, sep="")));
+        isolate(openPage(paste("http://brickset.com/sets/", 
+                               input$setid, sep="")))
+        ## Can't open iframe below 
+        # Got This request has been blocked; 
+        # the content must be served over HTTPS error msg
+        # Mixed Content: The page at 'https://xiaodan.shinyapps.io/LegoDatasetVisualization/' 
+        # was loaded over HTTPS, but requested an insecure resource 'http://brickset.com/sets/'. 
+        # This request has been blocked; the content must be served over HTTPS.
+        #isolate(getPage(paste("//brickset.com/sets/", 
+        #                       input$setid, sep="")))  
     })
     
     

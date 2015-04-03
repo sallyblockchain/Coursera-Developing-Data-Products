@@ -68,12 +68,15 @@ shinyUI(
                  h5('Output Address:'),
                  textOutput("address"),
                  p(""),
-                 h4("Step 2. Please click the button below. You will be 
-                    directed to the above address."),
+                 h4("Step 2. Please click the button below. 
+                    The link to the Set's page is being generated."),
                  p(""),
-                 actionButton("goButtonDirect", "Show BrickSet Page for This Set Below!"),
+                 actionButton("goButtonDirect", "Generate Link Below!"),
                  p(""),
-                 htmlOutput("inc")
+                 htmlOutput("inc"),
+                 p("I was supposed to show you in an iframe below. However, it only
+                   worked on localhost and has security issue after deployed to the cloud. Ooops...")
+                 
              )         
         ),
         
