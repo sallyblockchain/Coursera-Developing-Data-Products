@@ -16,11 +16,11 @@ setnames(data, "set_id", "setId")
 # data$miniFigure <- as.numeric(data$theme=="Collectible Minifigures")
 # Exploratory data analysis
 sum(is.na(data)) # 0
-length(unique(data$setId)) # 10036
+length(unique(data$setId)) # 10418
 table(data$year) # 1950 - 2015
 length(table(data$year)) # 64
 years <- sort(unique(data$year))
-length(table(data$theme)) # 100
+length(table(data$theme)) # 101
 themes <- sort(unique(data$theme))
 # sqldf("SELECT distinct year FROM data") 
 

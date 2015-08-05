@@ -7,12 +7,6 @@ themes <- sort(unique(data$theme))
 # Shiny server
 shinyServer(
   function(input, output) {
-#     output$text1 <- renderText({input$text1})
-#     output$text2 <- renderText({input$text2})
-#     output$text3 <- renderText({
-#       input$goButton
-#       isolate(paste(input$text1, input$text2))
-#     })
     output$setid <- renderText({input$setid})
     
     output$address <- renderText({
