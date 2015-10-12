@@ -16,18 +16,17 @@ setnames(data, "set_id", "setId")
 # data$miniFigure <- as.numeric(data$theme=="Collectible Minifigures")
 # Exploratory data analysis
 sum(is.na(data)) # 0
-length(unique(data$setId)) # 10418
+length(unique(data$setId)) # 10482
 table(data$year) # 1950 - 2015
 length(table(data$year)) # 64
 years <- sort(unique(data$year))
-length(table(data$theme)) # 101
+length(table(data$theme)) # 102
 themes <- sort(unique(data$theme))
 # sqldf("SELECT distinct year FROM data") 
 
-
 ## Helper functions
 
-#' Aggregate dataset by year
+#' Aggregate dataset by year, piece and theme
 #' 
 #' @param dt data.table
 #' @param minYear
@@ -37,12 +36,44 @@ themes <- sort(unique(data$theme))
 #' @param themes
 #' @return data.table
 #'
-groupByYearPiece <- function(dt, minYear, maxYear, minPiece,
+groupByYearAll <- function(dt, minYear, maxYear, minPiece,
                              maxPiece, themes) {
     result <- dt %>% filter(year >= minYear, year <= maxYear,
                             pieces >= minPiece, pieces <= maxPiece,
                             theme %in% themes) 
     return(result)
+}
+
+#' Aggregate dataset only by year
+#' 
+#' @param dt data.table
+#' @param minYear
+#' @param maxYear
+#' @return data.table
+#'
+groupByYear <- function(dt, minYear, maxYear) {
+    result <- dt %>% filter(year >= minYear, year <= maxYear) 
+    return(result)
+}
+
+#' Aggregate dataset by sets
+#' 
+#' @param dt data.table
+#' @param minYear
+#' @param maxYear
+#' @param minPiece
+#' @param maxPiece
+#' @param themes
+#' @return result data.table
+#' 
+groupByYearSet <- function(dt, minYear, maxYear, 
+                           minPiece, maxPiece, themes) {
+    dt <- groupByYear(dt, minYear, maxYear)
+    result <- dt %>% 
+        group_by(year) %>% 
+        summarise(total_sets = n_distinct(setId)) %>%
+        arrange(year)
+    return(result) 
 }
 
 #' Aggregate dataset by themes
@@ -58,10 +89,8 @@ groupByYearPiece <- function(dt, minYear, maxYear, minPiece,
 groupByTheme <- function(dt, minYear, maxYear, 
                          minPiece, maxPiece, themes) {
     # use pipelining
-    # print(dim(dt))
-    dt <- groupByYearPiece(dt, minYear, maxYear, minPiece,
+    dt <- groupByYearAll(dt, minYear, maxYear, minPiece,
                            maxPiece, themes) 
-    # print(dim(result))
     result <- datatable(dt, options = list(iDisplayLength = 50))
     return(result)
     # The following does not work
@@ -84,11 +113,11 @@ groupByTheme <- function(dt, minYear, maxYear,
 #'
 groupByYearAgg <- function(dt, minYear, maxYear, minPiece,
                            maxPiece, themes) {
-    dt <- groupByYearPiece(dt, minYear, maxYear, minPiece,
-                      maxPiece, themes)
+    # only need the minYear and maxYear here
+    dt <- groupByYear(dt, minYear, maxYear)
     result <- dt %>% 
             group_by(year)  %>% 
-            summarise(count = n()) %>%
+            summarise(count = n_distinct(theme)) %>%
             arrange(year)
     return(result)
 }
@@ -106,7 +135,7 @@ groupByYearAgg <- function(dt, minYear, maxYear, minPiece,
 #'
 groupByPieceAvg <- function(dt,  minYear, maxYear, minPiece,
                             maxPiece, themes) {
-    dt <- groupByYearPiece(dt, minYear, maxYear, minPiece,
+    dt <- groupByYearAll(dt, minYear, maxYear, minPiece,
                            maxPiece, themes)
     result <- dt %>% 
             group_by(year) %>% 
@@ -127,13 +156,41 @@ groupByPieceAvg <- function(dt,  minYear, maxYear, minPiece,
 #'
 groupByPieceThemeAvg <- function(dt,  minYear, maxYear, minPiece,
                                  maxPiece, themes) {
-    dt <- groupByYearPiece(dt, minYear, maxYear, minPiece,
+    dt <- groupByYearAll(dt, minYear, maxYear, minPiece,
                            maxPiece, themes)
     result <- dt %>% 
             group_by(theme) %>%
             summarise(avgPieces = mean(pieces)) %>%
             arrange(theme)
     return(result)
+}
+
+#' Plot number of sets by year
+#' 
+#' @param dt data.table
+#' @param dom
+#' @param xAxisLabel year
+#' @param yAxisLabel number of sets
+#' @return setsByYear plot
+plotSetsCountByYear <- function(dt, dom = "setsByYear", 
+                                    xAxisLabel = "Year",
+                                    yAxisLabel = "Number of Sets") {
+        setsByYear <- nPlot(
+            total_sets ~ year,
+            data = dt,
+            type = "stackedAreaChart",
+            dom = dom, width = 650
+        )
+        setsByYear$chart(margin = list(left = 100))
+        setsByYear$chart(color = c('purple', 'blue', 'green'))
+        setsByYear$chart(tooltipContent = "#! function(key, x, y, e){ 
+  return '<h5><b>Year</b>: ' + e.point.year + '<br>' + '<b>Total Sets</b>: ' 
+    + e.point.total_sets + '<br>'
+    + '</h5>'
+} !#")
+        setsByYear$yAxis(axisLabel = yAxisLabel, width = 80)
+        setsByYear$xAxis(axisLabel = xAxisLabel, width = 70)
+        setsByYear 
 }
 
 #' Plot number of themes by year
@@ -149,13 +206,16 @@ plotThemesCountByYear <- function(dt, dom = "themesByYear",
     themesByYear <- nPlot(
         count ~ year,
         data = dt,
-        #type = "lineChart", 
         type = "multiBarChart",
         dom = dom, width = 650
     )
     themesByYear$chart(margin = list(left = 100))
     themesByYear$yAxis(axisLabel = yAxisLabel, width = 80)
     themesByYear$xAxis(axisLabel = xAxisLabel, width = 70)
+    themesByYear$chart(tooltipContent = "#! function(key, x, y, e){ 
+  return '<h5><b>Year</b>: ' + e.point.year + '<br>' + '<b>Total Themes</b>: ' + e.point.count + '<br>'
+    + '</h5>'
+} !#")
     themesByYear
 }
 
@@ -172,7 +232,6 @@ plotPiecesByYear <- function(dt, dom = "piecesByYear",
     piecesByYear <- nPlot(
         pieces ~ year,
         data = dt,
-        #         group = "year",
         type = "scatterChart",
         dom = dom, width = 650
     )
@@ -182,10 +241,10 @@ plotPiecesByYear <- function(dt, dom = "piecesByYear",
     piecesByYear$chart(color = c('green', 'orange', 'blue'))
     piecesByYear$chart(tooltipContent = "#! function(key, x, y, e){ 
   return '<h5><b>Set Name</b>: ' + e.point.name + '<br>'
-    + '<b>Set ID</b>: ' + e.point.setId  
+    + '<b>Set ID</b>: ' + e.point.setId + '<br>'
+    + '<b>Theme</b>: ' + e.point.theme
     + '</h5>'
-    
-} !#") # data[data$pieces==y&data$year==x, ]$name
+} !#")
     piecesByYear$yAxis(axisLabel = yAxisLabel, width = 80)
     piecesByYear$xAxis(axisLabel = xAxisLabel, width = 70)
     #     piecesByYear$chart(useInteractiveGuideline = TRUE)
@@ -214,7 +273,6 @@ plotPiecesByYearAvg <- function(dt, dom = "piecesByYearAvg",
     piecesByYearAvg$yAxis(axisLabel = yAxisLabel, width = 80)
     piecesByYearAvg$xAxis(axisLabel = xAxisLabel, width = 70)
     piecesByYearAvg
-    
 }
 
 #' Plot number of average pieces by theme
@@ -239,5 +297,4 @@ plotPiecesByThemeAvg <- function(dt, dom = "piecesByThemeAvg",
     piecesByThemeAvg$xAxis(axisLabel = xAxisLabel, width = 200,
                            rotateLabels = -20, height = 200)
     piecesByThemeAvg
-    
 }

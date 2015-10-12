@@ -71,6 +71,12 @@ shinyServer(
                      input$pieces[2], input$themes)
     })
 
+    dataTableBySetYear <- reactive({
+        groupByYearSet(data, input$timeline[1], 
+                       input$timeline[2], input$pieces[1],
+                       input$pieces[2], input$themes)
+    })
+
     dataTableByYear <- reactive({
         groupByYearAgg(data, input$timeline[1], 
                     input$timeline[2], input$pieces[1],
@@ -78,7 +84,7 @@ shinyServer(
     })
 
     dataTableByPiece <- reactive({
-        groupByYearPiece(data, input$timeline[1], 
+        groupByYearAll(data, input$timeline[1], 
                        input$timeline[2], input$pieces[1],
                        input$pieces[2], input$themes)
     })
@@ -101,6 +107,10 @@ shinyServer(
     } #, options = list(bFilter = FALSE, iDisplayLength = 50)
     )
     
+    output$setsByYear <- renderChart({
+        plotSetsCountByYear(dataTableBySetYear())
+    })
+
     output$themesByYear <- renderChart({
         plotThemesCountByYear(dataTableByYear())
     })
