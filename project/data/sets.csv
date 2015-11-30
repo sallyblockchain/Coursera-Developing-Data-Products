@@ -119,7 +119,7 @@ set_id,year,pieces,t1,descr
 10124-1,2003,670,Sculptures,Wright Flyer
 10127-1,2003,56,Sports,NHL Action Set with Stickers
 10128-1,2003,326,Train,Train Level Crossing
-10129-1,2003,1455,Star Wars,Rebel Snowspeeder - UCS
+10129-1,2003,1456,Star Wars,Rebel Snowspeeder - UCS
 101-3,1966,1,Train,4.5V Battery Case
 10131-1,2004,688,Star Wars,TIE Fighter Collection
 10132-1,2004,693,Harry Potter,Motorized Hogwarts Express
@@ -179,7 +179,7 @@ set_id,year,pieces,t1,descr
 10196-1,2009,3222,Sculptures,Grand Carousel
 10197-1,2009,2237,Modular Buildings,Fire Brigade
 10198-1,2009,1408,Star Wars,Tantive IV
-10199-1,2009,812,Seasonal,Winter Toy Shop
+10199-1,2009,814,Seasonal,Winter Toy Shop
 10-2,1976,129,Universal Building Set,Universal Building Set
 10200-1,2008,877,Factory,Custom Car Garage
 10201-1,2003,3,Bionicle,Takutanuva
@@ -207,7 +207,7 @@ set_id,year,pieces,t1,descr
 10224-1,2012,2769,Modular Buildings,Town Hall
 10225-1,2012,2130,Star Wars,R2-D2
 10226-1,2012,878,Sculptures,Sopwith Camel
-10227-1,2012,1490,Star Wars,B-wing Starfighter
+10227-1,2012,1491,Star Wars,B-wing Starfighter
 10228-1,2012,2064,Monster Fighters,Haunted House
 10229-1,2012,1490,Seasonal,Winter Village Cottage
 10230-1,2012,1357,Modular Buildings,Mini Modulars
@@ -215,7 +215,7 @@ set_id,year,pieces,t1,descr
 10232-1,2013,2193,Modular Buildings,Palace Cinema
 10233-1,2013,1349,Train,Horizon Express
 10234-1,2013,2988,Sculptures,Sydney Opera House
-10235-1,2013,1258,Seasonal,Winter Village Market [Initial Release]
+10235-1,2013,1259,Seasonal,Winter Village Market [Initial Release]
 10236-1,2013,2023,Star Wars,Ewok Village
 10237-1,2013,2355,The Hobbit and Lord of the Rings,The Tower of Orthanc
 10240-1,2013,1496,Star Wars,Red Five X-Wing Starfighter
@@ -228,6 +228,7 @@ set_id,year,pieces,t1,descr
 10246-1,2015,2261,Modular Buildings,Detective&#039;s Office
 10247-1,2015,2463,Creator,Ferris Wheel
 10248-1,2015,1156,Creator,Ferrari F40
+10249-1,2015,896,Seasonal,Winter Toy Shop
 10250-1,2013,243,Creator,Year Of The Snake
 10285-1,2011,1,Mindstorms,Compass Sensor for Mindstorms NXT
 10287-1,2009,1,Mindstorms,Intelligent NXT Brick (Black)
@@ -356,7 +357,7 @@ set_id,year,pieces,t1,descr
 10669-1,2014,107,Juniors,Turtle Lair
 1067-1,1988,251,Educational and Dacta,Community Vehicles
 10671-1,2014,123,Juniors,Fire Emergency
-10672-1,2014,148,Juniors,Batman: Defend the Batcave
+10672-1,2014,150,Juniors,Batman: Defend the Batcave
 10673-1,2014,350,Juniors,Race Car Rally
 10674-1,2014,305,Juniors,Pony Farm
 10675-1,2014,146,Juniors,Police – The Big Escape
@@ -534,7 +535,9 @@ set_id,year,pieces,t1,descr
 1189-1,1999,30,Town,Rocket Boat
 1190-1,1999,90,Town,Retro Buggy
 11905-1,2013,189,Books,DK Star Wars Brickmaster: Battle For The Stolen Crystals
+11908-1,2015,77,Friends,Build Your Own Adventure with Liza Mini-Doll and Touring Car
 119-1,1968,401,Train,Super Train Set
+11910-1,2015,102,Space,Micro-Scale Space Cruiser
 1191-1,1999,34,Town,Try Bird
 1194-1,1999,408,Universal Building Set,Classic Building Table
 1195-1,2001,42,Space,Alien Encounter
@@ -763,7 +766,7 @@ set_id,year,pieces,t1,descr
 1340-1,1987,18,Technic,Weight Bricks
 134-1,1975,55,Train,Mobile Crane and Waggon
 1341-1,1985,3,Educational and Dacta,Building Plates Green
-134-2,1979,80,Fabuland,Service Station
+134-2,1979,84,Fabuland,Service Station
 1342-1,1986,7,Educational and Dacta,Electric Switches and Tiles
 1343-1,1986,4,Educational and Dacta,Optosensors (4.5V) and Discs
 1344-1,1986,12,Educational and Dacta,Light Bricks (4.5V)
@@ -888,11 +891,11 @@ set_id,year,pieces,t1,descr
 1515-1,1989,2,Town,Town Value Pack
 1516-1,1987,21,Fabuland,Theater with Play-Scenes
 1517-1,1989,32,Town,Race Car
-1518-1,1989,81,Town,Race Car Repair
+1518-1,1989,79,Town,Race Car Repair
 15-2,1973,157,Minitalia,Large House Set
 1520-1,1985,215,Universal Building Set,Basic Set with Storage Case
 1520-2,1990,2,Town,Town 2 for 1 Bonus Offer
-152-1,1966,21,Train,Two Train Wagons
+152-1,1966,22,Train,Two Train Wagons
 1521-1,1989,24,Universal Building Set,Basic Building Set Trial Size
 1522-1,1989,44,Universal Building Set,Basic Building Set Trial Size
 1523-1,1986,27,Universal Building Set,Basic Set Trial Size
@@ -1024,7 +1027,7 @@ set_id,year,pieces,t1,descr
 1662-1,1989,630,Universal Building Set,Basic Building Set in Bucket
 1663-1,1989,451,Universal Building Set,Basic Building Set in Bucket
 1665-1,1990,108,Town,Dual FX Racers
-1666-1,1991,139,Universal Building Set,Brick Vac
+1666-1,1991,140,Universal Building Set,Brick Vac
 1668-1,1992,30,Universal Building Set,Basic Building Set Trial Size
 1670-1,1992,28,Universal Building Set,Basic Building Set Trial Size
 167-1,1978,100,Train,Loading Ramp and Car Transport Wagon
@@ -1279,7 +1282,7 @@ set_id,year,pieces,t1,descr
 20005-1,2008,38,Bionicle,Winged Rahi (Klakk)
 20006-1,2008,64,Star Wars,Clone Turbo Tank - Mini
 20007-1,2009,84,Star Wars,Republic Attack Cruiser - Mini
-20008-1,2009,78,Creator,Tow Truck
+20008-1,2009,79,Creator,Tow Truck
 20009-1,2009,94,Star Wars,AT-TE Walker - Mini
 200-1,1974,78,Building Set with People,Family
 20010-1,2009,94,Star Wars,Republic Gunship - Mini
@@ -1649,7 +1652,7 @@ set_id,year,pieces,t1,descr
 265-1,1974,146,Homemaker,Bathroom
 266-1,1974,146,Homemaker,Child's Bedroom
 268-1,1979,248,Homemaker,Family Room
-269-1,1979,204,Homemaker,Kitchen
+269-1,1979,209,Homemaker,Kitchen
 2-7,1973,139,Universal Building Set,Basic Set
 270-2,1973,46,Homemaker,"Grandfather Clock, Chair and Table"
 2707-1,2000,9,Universal Building Set,Glider
@@ -1724,6 +1727,7 @@ set_id,year,pieces,t1,descr
 2848-1,1997,19,Castle,Fright Knights Flying Machine
 2849-1,1997,20,Town,Helicopter
 2850828-1,2011,0,Gear,LEGO® Star Wars™ Darth Vader™ Watch
+2850829-1,2011,0,Gear,Luke Skywalker Watch
 2851193-1,2009,0,Gear,LEGO® Star Wars™ Darth Maul™ Watch
 2852724-1,2011,0,Mindstorms,Accelerometer Sensor for Mindstorms NXT
 2852725-1,2011,1,Mindstorms,Infrared Seeker for Mindstorms NXT (Version 2)
@@ -1871,7 +1875,7 @@ set_id,year,pieces,t1,descr
 30072-1,2010,15,Toy Story,Woody's Camp Out
 30073-1,2010,20,Toy Story,Buzz's Mini Ship
 30080-1,2011,26,Ninjago,Ninja Glider
-30081-1,2011,35,Ninjago,Skeleton Chopper
+30081-1,2011,41,Ninjago,Skeleton Chopper
 30082-1,2011,32,Ninjago,Enemy Training
 30083-1,2011,31,Ninjago,Dragon Fight
 30084-1,2011,5,Ninjago,Ninjago Promotional Set
@@ -2032,6 +2036,7 @@ set_id,year,pieces,t1,descr
 30314-1,2015,45,Town,Go-Kart Racer
 30315-1,2015,39,Town,Space Utility Vehicle
 303-2,1964,46,Classic,Aeroplane
+30320-1,2015,29,Jurassic World,Gallimimus Trap
 3032-1,1999,600,Universal Building Set,Medium Bucket
 3033-1,1998,1200,Universal Building Set,Basic Bulk Tub (American Version)
 3033-2,2002,1200,Universal Building Set,Basic Bulk Tub (Overseas Version)
@@ -2095,7 +2100,7 @@ set_id,year,pieces,t1,descr
 31010-1,2013,356,Creator,Treehouse
 31011-1,2013,619,Creator,Aviation Adventures
 31012-1,2013,762,Creator,Family House
-31013-1,2014,68,Creator,Red Thunder
+31013-1,2014,66,Creator,Red Thunder
 31014-1,2014,63,Creator,Power Digger
 31015-1,2014,56,Creator,Emerald Express
 31017-1,2014,119,Creator,Sunset Speeder
@@ -2342,7 +2347,7 @@ set_id,year,pieces,t1,descr
 3439-1,2000,105,Town,Spy Runner
 3440-1,2003,71,Sports,NBA Jam Session Co-Pack
 344-1,1969,77,Legoland,Bungalow
-344-2,1979,80,Fabuland,Service Station
+344-2,1979,84,Fabuland,Service Station
 3442-1,1998,104,Town,"Legoland California Truck, Limited Edition"
 3444-1,2000,25,Bulk Bricks,2 x 4 Ridge Roof Tiles Steep Sloped Black
 3445-1,2000,25,Bulk Bricks,2 x 4 Ridge Roof Tiles Steep Sloped Red
@@ -2766,6 +2771,7 @@ set_id,year,pieces,t1,descr
 3948-1,2001,0,Gear,Stormtrooper Key Chain
 395-1,1976,283,Hobby Sets,1909 Rolls-Royce
 396-1,1976,428,Hobby Sets,Thatcher Perkins Locomotive
+3961-1,1998,0,Gear,Johnny Thunder Key Chain
 398-1,1978,973,Hobby Sets,U.S.S. Constellation
 3983-1,2002,0,Gear,Captain Roger Key Chain
 4000001-1,2011,794,LEGO Brand Store,Moulding Machines
@@ -2905,6 +2911,7 @@ set_id,year,pieces,t1,descr
 4012-1,1996,99,Boat,Wave Cops
 40121-1,2015,157,Seasonal,Painting Easter Eggs
 40122-1,2015,133,Seasonal,Trick or Treat
+40123-1,2015,158,Seasonal,Thanksgiving Feast
 40126-1,2015,55,LEGO Brand Store,Monthly Mini Model Build January 2015 - Alien
 40127-1,2015,39,LEGO Brand Store,Monthly Mini Model Build February 2015 - Space Shuttle
 40128-1,2015,50,LEGO Brand Store,Monthly Mini Model Build March 2015 - Robot
@@ -2914,6 +2921,7 @@ set_id,year,pieces,t1,descr
 4013-1,2003,1000,Creator,Create and Imagine
 40131-1,2015,55,LEGO Brand Store,June 2015 Monthly Mini Model Build - Parrot
 40133-1,2015,49,LEGO Brand Store,kangaroo
+40138-1,2015,233,Seasonal,Christmas Train
 40140-1,2015,75,Creator,Flower Cart
 4014-1,2003,500,Creator,Creator Exclusive
 40145-1,2015,412,LEGO Brand Store,LEGO Brand Store Opening Set
@@ -3163,12 +3171,12 @@ set_id,year,pieces,t1,descr
 4107-1,2002,1000,Creator,Build Your Dreams
 41071-1,2015,98,Elves,Aira's Creative Workshop
 41072-1,2015,248,Elves,Naida's Spa Secret
-41073-1,2015,311,Elves,Naida's Epic Adventure Ship
+41073-1,2015,312,Elves,Naida's Epic Adventure Ship
 41074-1,2015,323,Elves,Azari and the Magical Bakery
 41075-1,2015,511,Elves,The Elves&#039; Treetop Hideaway
 41076-1,2015,178,Elves,Farran and the Crystal Hollow
-41077-1,2015,318,Elves,Aira's Pegasus Sleigh
-41078-1,2015,806,Elves,Skyra's Mysterious Sky Castle
+41077-1,2015,319,Elves,Aira's Pegasus Sleigh
+41078-1,2015,807,Elves,Skyra's Mysterious Sky Castle
 4108-1,2002,2,4 Juniors,T-Junction Road Plates
 41085-1,2015,200,Friends,Vet Clinic
 41086-1,2015,89,Friends,Vet Ambulance
@@ -3303,6 +3311,15 @@ set_id,year,pieces,t1,descr
 41542-1,2015,51,Mixels,Spugg
 41543-1,2015,56,Mixels,Turg
 41544-1,2015,60,Mixels,Tungster
+41545-1,2015,68,Mixels,Kramm
+41546-1,2015,65,Mixels,Forx
+41547-1,2015,74,Mixels,Wuzzo
+41548-1,2015,52,Mixels,Dribbal
+41549-1,2015,66,Mixels,Gurggle
+41550-1,2015,53,Mixels,Slusho
+41551-1,2015,51,Mixels,Snax
+41552-1,2015,68,Mixels,Berp
+41553-1,2015,69,Mixels,Vaka-Waka
 4157-1,1997,36,Freestyle,Freestyle Trial Size
 4158-1,1997,128,Freestyle,Small Freestyle Box
 416-1,1966,18,Classic,4 Sixteens 2 Twenties (The Building Toy)
@@ -3513,7 +3530,7 @@ set_id,year,pieces,t1,descr
 44007-1,2013,59,Hero Factory,Ogrum
 44008-1,2013,66,Hero Factory,Surge
 44009-1,2013,151,Hero Factory,Dragon Bolt
-44010-1,2013,68,Hero Factory,Stormer
+44010-1,2013,69,Hero Factory,Stormer
 4401-1,2003,110,Designer Sets,Little Creations
 44011-1,2013,60,Hero Factory,Frost Beast
 44012-1,2013,51,Hero Factory,Evo
@@ -4208,6 +4225,7 @@ set_id,year,pieces,t1,descr
 5002113-1,2014,23,Friends,Beach Hammock
 5002122-1,2014,3,Star Wars,TC-4
 5002123-1,2014,7,Star Wars,Darth Revan
+5002125-1,2015,5,Super Heroes,Electro
 5002126-1,2014,4,Super Heroes,Martian Manhunter
 5002127-1,2014,6,Teenage Mutant Ninja Turtles,Flashback Shredder
 5002136-1,2014,25,Town,Arctic Accessory Set
@@ -4236,9 +4254,12 @@ set_id,year,pieces,t1,descr
 5002914-1,2014,0,Gear,THE LEGO® MOVIE™ Emmet Key Light
 5002915-1,2014,0,Gear,Batman Key Light
 5002916-1,2014,0,Gear,THE LEGO® MOVIE™ Unikitty Key Light
+5002919-1,2015,25,Ninjago, Scenery and Dagger Trap polybag
 5002928-1,2015,11,Friends,Party Polybag
+5002930-1,2015,6,Friends,Be A Pop Star
 5002938-1,2015,6,Star Wars,Stormtrooper Sergeant
 5002941-1,2015,6,Bionicle,Bionicle Hero Pack
+5002942-1,2015,10,Bionicle,Bionicle Villain Pack
 5002947-1,2015,4,Star Wars,Admiral Yularen
 5003022-1,2014,0,Gear,THE LEGO® MOVIE™ Bad Cop Minifigure Alarm Clock
 5003023-1,2014,0,Gear,THE LEGO® MOVIE™ Bad Cop Minifigure Link Watch
@@ -4246,6 +4267,7 @@ set_id,year,pieces,t1,descr
 5003025-1,2014,0,Gear,THE LEGO® MOVIE™ Emmet Minifigure Link Watch
 5003026-1,2014,0,Gear,THE LEGO® MOVIE™ Lucy/Wyldstyle Minifigure Alarm Clock
 5003027-1,2014,0,Gear,THE LEGO® MOVIE™ Emmet Minifigure Alarm Clock
+5003082-1,2015,28,Pirates,Pirates Adventure
 5003096-1,2014,2,Town,LEGO® City Fire Collection: 60004 and 850618
 5003-1,1987,2,Service Packs,"Light Bricks, 4.5V"
 5003246-1,2015,30,Educational and Dacta,EV3 Track Rubber Elements
@@ -4326,6 +4348,9 @@ set_id,year,pieces,t1,descr
 5004558-1,2015,2,Pirates,Pirates Collection 2
 5004559-1,2015,2,Speed Champions,Speed Champions Collection 2
 5004590-1,2015,338,Super Heroes,Bat Pod
+5004868-1,2015,3,Mixels,LEGO® Mixels™ Munchos
+5004869-1,2015,3,Mixels,LEGO® Mixels™ Glorp Corp
+5004870-1,2015,4,Mixels,LEGO® Mixels™ Weldos
 5005-1,1987,1,Service Packs,Battery Box 4.5V
 5006-1,1987,2,Service Packs,Replacement 2-Piece Battery Motor Housing
 5007-1,1987,1,Service Packs,Basic Motor 4.5V
@@ -4809,7 +4834,9 @@ set_id,year,pieces,t1,descr
 561506-1,2015,23,Friends,Sweet Garden and Kitchen
 561507-1,2015,20,Friends,Garden items
 561508-1,2015,19,Friends,Turtle’s island
+561509-1,2015,21,Friends,Become a star
 5615-1,2008,21,Castle,The Knight
+561510-1,2015,19,Friends,Trick or treat
 5616-1,2008,23,Space,Mini Robot
 5617-1,2008,21,Space,Alien Jet
 5618-1,2008,19,Castle,Troll Warrior
@@ -4920,7 +4947,7 @@ set_id,year,pieces,t1,descr
 5883-1,2012,136,Dino,Tower Takedown
 5884-1,2012,258,Dino,Raptor Chase
 5885-1,2012,270,Dino,Triceratops Trapper
-5886-1,2012,478,Dino,T-Rex Hunter
+5886-1,2012,474,Dino,T-Rex Hunter
 5887-1,2012,783,Dino,Dino Defense HQ
 5888-1,2012,221,Dino,Ocean Interceptor
 5890-1,1994,229,Belville,Pretty Wishes Playhouse
@@ -5079,7 +5106,7 @@ set_id,year,pieces,t1,descr
 60048-1,2014,248,Town,Police Dog Unit
 60049-1,2014,381,Town,Helicopter Transporter
 60050-1,2014,421,Town,Train Station
-60051-1,2014,605,Town,High-Speed Passenger Train
+60051-1,2014,608,Town,High-Speed Passenger Train
 6005188-1,2012,8,Star Wars,Darth Maul
 60052-1,2014,884,Town,Cargo Train
 60053-1,2014,99,Town,Race Car
@@ -5120,7 +5147,7 @@ set_id,year,pieces,t1,descr
 60063-9,2014,6,Seasonal,Advent Calendar 2014 City (Day 8) Girl on Ice Skates
 60064-1,2014,372,Town,Arctic Supply Plane
 60065-1,2015,57,Town,ATV Patrol
-60066-1,2015,76,Town,Swamp Police Starter Set
+60066-1,2015,78,Town,Swamp Police Starter Set
 60067-1,2015,250,Town,Helicopter Pursuit
 60068-1,2015,468,Town,Crooks' Hideout
 60069-1,2015,700,Town,Swamp Police Station
@@ -5147,7 +5174,7 @@ set_id,year,pieces,t1,descr
 60090-1,2015,42,Town,Deep Sea Scuba Scooter
 6009-1,1992,24,Castle,Black Knight
 60091-1,2015,90,Town,Deep Sea Starter Set
-60092-1,2015,269,Town,Deep Sea Submarine
+60092-1,2015,273,Town,Deep Sea Submarine
 60093-1,2015,383,Town,Deep Sea Helicopter
 60095-1,2015,711,Town,Deep Sea Exploration Vessel
 60096-1,2015,906,Town,Deep Sea Operation Base
@@ -5189,7 +5216,7 @@ set_id,year,pieces,t1,descr
 6039-1,1988,77,Castle,Twin-Arm Launcher
 6040-1,1984,93,Castle,Blacksmith Shop
 604-1,1978,21,Town,Shell Service Car
-6041-1,1986,112,Castle,Armor Shop
+6041-1,1986,114,Castle,Armor Shop
 604-2,1971,28,Legoland,Excavator
 6042-1,1990,111,Castle,Dungeon Hunters
 6043-1,1993,156,Castle,Dragon Defender
@@ -5231,7 +5258,7 @@ set_id,year,pieces,t1,descr
 608-1,1971,33,Legoland,Kiosk
 6081-1,1990,438,Castle,King's Mountain Fortress
 608-2,1979,25,Town,Taxi
-6082-1,1993,405,Castle,Fire Breathing Fortress
+6082-1,1993,406,Castle,Fire Breathing Fortress
 6083-1,1981,210,Castle,Knight&#039;s Tournament
 6083-2,1998,198,Ninja,Samurai Stronghold
 6085-1,1988,688,Castle,Black Monarch's Castle
@@ -5285,6 +5312,7 @@ set_id,year,pieces,t1,descr
 6134-1,2012,38,Duplo,Siddeley Saves the Day
 6135-1,1996,60,Aquazone,Spy Shark
 6136-1,2011,61,Duplo,My First Zoo
+6138-1,2011,60,Duplo,My First Fire Station
 6140-1,1998,78,Aquazone,Crab
 614-1,1974,31,Legoland,Excavator
 6143-1,2012,34,Duplo,Race Team
@@ -5519,7 +5547,7 @@ set_id,year,pieces,t1,descr
 6357-1,1988,177,Town,Stunt 'Copter N' Truck
 6358-1,1987,154,Town,Snorkel Squad
 6359-1,1986,144,Town,Horse Trailer
-6360-1,1986,109,Town,Weekend Cottage
+6360-1,1986,117,Town,Weekend Cottage
 636-1,1996,14,Universal Building Set,Pullback Motor
 6361-1,1986,163,Town,Mobile Crane
 6362-1,1982,135,Town,Post Office
@@ -6294,7 +6322,7 @@ set_id,year,pieces,t1,descr
 6968-1,2005,48,Star Wars,Mini Wookiee Attack
 6969-1,1998,253,Space,Celestial Stinger
 6970-1,1980,269,Space,Beta I Command Base
-697-1,1976,94,Factory,Stagecoach
+697-1,1976,96,Factory,Stagecoach
 6971-1,1984,329,Space,Inter-Galactic Command Base
 697-2,1997,2,Books,Idea Book 697
 6972-1,1987,390,Space,Polaris I Space Lab
@@ -6424,7 +6452,7 @@ set_id,year,pieces,t1,descr
 70160-1,2014,88,Agents,Riverside Raid
 7016-1,2005,111,Vikings,Viking Boat against the Wyvern Dragon
 70161-1,2014,240,Agents,Tremor Track Infiltration
-70162-1,2014,300,Agents,Infearno Interception
+70162-1,2014,311,Agents,Infearno Interception
 70163-1,2014,428,Agents,Toxikita's Toxic Meltdown
 70164-1,2014,586,Agents,Hurricane Heist
 70165-1,2014,1056,Agents,Ultra Agents Mission HQ
@@ -6499,7 +6527,7 @@ set_id,year,pieces,t1,descr
 704-4,1984,1,Service Packs,Replacement Motor
 7044-1,2004,194,Town,Rescue Chopper
 7045-1,2003,273,Town,Hovercraft Hideout
-7046-1,2004,257,Town,Fire Command Craft
+7046-1,2004,271,Town,Fire Command Craft
 7047-1,2003,366,Town,Coast Watch HQ
 7048-1,2008,490,Castle,Troll Warship
 7049-1,2011,42,Space,Alien Striker
@@ -6540,7 +6568,7 @@ set_id,year,pieces,t1,descr
 70723-1,2014,333,Ninjago,Thunder Raider
 70724-1,2014,514,Ninjago,NinjaCopter
 70725-1,2014,689,Ninjago,Nindroid MechDragon
-70726-1,2014,251,Ninjago,Destructoid
+70726-1,2014,252,Ninjago,Destructoid
 70727-1,2014,425,Ninjago,X-1 Ninja Charger
 70728-1,2014,1216,Ninjago,Battle for Ninjago City
 70730-1,2015,294,Ninjago,Chain Cycle Ambush
@@ -6784,6 +6812,25 @@ set_id,year,pieces,t1,descr
 71009-8,2015,5,Collectible Minifigures,Martin
 71009-9,2015,5,Collectible Minifigures,Professor Frink
 710-1,1973,91,Factory,Wrecker with Car
+71010-0,2015,0,Collectible Minifigures,LEGO Minifigures - Series 14 {Random bag}
+71010-1,2015,5,Collectible Minifigures,Wolf Guy
+71010-10,2015,6,Collectible Minifigures,Gargoyle
+71010-11,2015,6,Collectible Minifigures,Skeleton Guy
+71010-12,2015,6,Collectible Minifigures,Monster Rocker
+71010-13,2015,7,Collectible Minifigures,Zombie Businessman
+71010-14,2015,5,Collectible Minifigures,Banshee
+71010-15,2015,5,Collectible Minifigures,Square Foot
+71010-16,2015,7,Collectible Minifigures,Spider Lady
+71010-17,2015,0,Collectible Minifigures,LEGO Minifigures - Series 14 - Complete
+71010-18,2015,0,Collectible Minifigures,LEGO Minifigures - Series 14 - Sealed Box
+71010-2,2015,7,Collectible Minifigures,Zombie Pirate
+71010-3,2015,6,Collectible Minifigures,Monster Scientist
+71010-4,2015,8,Collectible Minifigures,Wacky Witch
+71010-5,2015,7,Collectible Minifigures,Plant Monster
+71010-6,2015,5,Collectible Minifigures,Fly Monster
+71010-7,2015,7,Collectible Minifigures, Spectre
+71010-8,2015,7,Collectible Minifigures,Zombie Cheerleader
+71010-9,2015,7,Collectible Minifigures,Tiger Woman
 7101-1,1999,52,Star Wars,Lightsaber Duel
 71016-1,2015,2177,Town,The Kwik-E-Mart
 710-2,1966,1,Classic,Lockable Storage Case
@@ -6795,13 +6842,38 @@ set_id,year,pieces,t1,descr
 7110-1,1999,49,Star Wars,Landspeeder
 711-1,1977,57,Factory,Jeep CJ-5
 7111-1,1999,62,Star Wars,Droid Fighter
-7113-1,2002,92,Star Wars,Tusken Raider Encounter
+7113-1,2002,93,Star Wars,Tusken Raider Encounter
 7115-1,2000,79,Star Wars,Gungan Patrol
 7116-1,2010,19,Bionicle,Tahu
+71170-1,2015,266,Dimensions,Starter Pack: PS3
 7117-1,2010,19,Bionicle,Gresh
+71171-1,2015,266,Dimensions,LEGO® DIMENSIONS™ PLAYSTATION® 4 Starter Pack
+71172-1,2015,266,Dimensions,LEGO® DIMENSIONS™ Xbox One Starter Pack
+71173-1,2015,266,Dimensions,LEGO® DIMENSIONS™ Xbox 360 Starter Pack
+71174-1,2015,266,Dimensions,LEGO® DIMENSIONS™ Wii U™ Starter Pack
 7119-1,2002,118,Star Wars,Twin-Pod Cloud Car
+71201-1,2015,94,Dimensions,LEGO® DIMENSIONS™ Back to the Future™ Level Pack
+71202-1,2015,96,Dimensions,LEGO® DIMENSIONS™ The Simpsons™ Level Pack
+71203-1,2015,85,Dimensions,LEGO® DIMENSIONS™ Portal® 2 Level Pack
+71205-1,2015,102,Dimensions,LEGO® DIMENSIONS™ Jurassic World™ Team Pack
+71206-1,2015,89,Dimensions,LEGO® DIMENSIONS™ Scooby-Doo™ Team Pack
+71209-1,2015,41,Dimensions,LEGO® DIMENSIONS™ Wonder Woman Fun Pack
 712-1,1977,115,Legoland,Sea Plane
+71210-1,2015,50,Dimensions,LEGO® DIMENSIONS™ Cyborg™ Fun Pack
 7121-1,1999,82,Star Wars,Naboo Swamp
+71212-1,2015,55,Dimensions,LEGO® DIMENSIONS™ Fun Pack Emmet
+71213-1,2015,62,Dimensions,LEGO® DIMENSIONS™ Bad Cop Fun Pack
+71214-1,2015,46,Dimensions,LEGO® DIMENSIONS™ Benny Fun Pack 
+71215-1,2015,48,Dimensions,LEGO® DIMENSIONS™ Jay Fun Pack
+71216-1,2015,59,Dimensions,LEGO® DIMENSIONS™ Nya Fun Pack
+71217-1,2015,45,Dimensions,LEGO® DIMENSIONS™ Zane Fun Pack
+71218-1,2015,33,Dimensions,LEGO® DIMENSIONS™ Gollum Fun Pack
+71219-1,2015,36,Dimensions,LEGO® DIMENSIONS™ Legolas Fun Pack
+71220-1,2015,56,Dimensions,LEGO® DIMENSIONS™ Gimli Fun Pack
+71221-1,2015,38,Dimensions,LEGO® DIMENSIONS™ Wicked Witch™ Fun Pack
+71222-1,2015,57,Dimensions,LEGO® DIMENSIONS™ Laval Fun Pack
+71223-1,2015,45,Dimensions,LEGO® DIMENSIONS™ Cragger Fun Pack
+71232-1,2015,59,Dimensions,LEGO® DIMENSIONS™ Eris Fun Pack
 7124-1,2000,107,Star Wars,Flash Speeder
 7126-1,2001,133,Star Wars,Battle Droid Carrier
 7127-1,2001,107,Star Wars,Imperial AT-ST
@@ -6933,7 +7005,7 @@ set_id,year,pieces,t1,descr
 7258-1,2005,368,Star Wars,Wookiee Attack
 7259-1,2005,398,Star Wars,ARC-170 Starfighter
 7260-1,2005,380,Star Wars,Wookiee Catamaran
-726-1,1976,274,Train,12V Western Train with 2 Wagons and Cowboys
+726-1,1976,287,Train,12V Western Train with 2 Wagons and Cowboys
 7261-1,2005,803,Star Wars,Clone Turbo Tank [Light-Up Mace Windu]
 7261-2,2006,809,Star Wars,Clone Turbo Tank (with Non-Light-Up Mace Windu)
 7262-1,2004,415,Star Wars,TIE Fighter and Y-wing (TRU exclusive re-release)
@@ -7043,7 +7115,7 @@ set_id,year,pieces,t1,descr
 7417-1,2003,288,Adventurers,Temple of Mount Everest
 7418-1,2003,354,Adventurers,Scorpion Palace
 7418-2,2003,2,Adventurers,Scorpion Palace and Foam Scimitar
-7419-1,2003,775,Adventurers,Dragon Fortress
+7419-1,2003,779,Adventurers,Dragon Fortress
 7420-1,2003,69,Adventurers,Thunder Blazer
 742-1,1970,1,Train,12V New Transformer for 110V Pack
 7422-1,2003,33,Adventurers,Airplane
@@ -7420,7 +7492,7 @@ set_id,year,pieces,t1,descr
 76011-1,2014,183,Super Heroes,Batman: Man-Bat Attack
 76012-1,2014,303,Super Heroes,Batman: The Riddler Chase
 76013-1,2014,485,Super Heroes,The Joker Steam Roller
-76014-1,2014,68,Super Heroes,Spider-Trike vs. Electro
+76014-1,2014,69,Super Heroes,Spider-Trike vs. Electro
 76015-1,2014,236,Super Heroes,Doc Ock Truck Heist
 76016-1,2014,298,Super Heroes,Spider-Helicopter Rescue
 76017-1,2014,178,Super Heroes,Captain America vs. Hydra
@@ -7481,11 +7553,11 @@ set_id,year,pieces,t1,descr
 7641-1,2009,483,Town,City Corner
 7642-1,2009,941,Town,Garage
 7643-1,2009,114,Town,Air Show Plane
-7644-1,2008,771,Space,MX-81 Hypersonic Operations Aircraft
-7645-1,2008,573,Space,MT-61 Crystal Reaper
+7644-1,2008,773,Space,MX-81 Hypersonic Operations Aircraft
+7645-1,2008,575,Space,MT-61 Crystal Reaper
 764521-1,2008,2,Town,Co-Pack
-7646-1,2008,313,Space,ETX Alien Infiltrator
-7647-1,2008,227,Space,MX-41 Switch Fighter
+7646-1,2008,315,Space,ETX Alien Infiltrator
+7647-1,2008,229,Space,MX-41 Switch Fighter
 7648-1,2008,129,Space,MT-21 Mobile Mining Unit
 7649-1,2008,739,Space,MT-201 Ultra-Drill Walker
 7654-1,2007,102,Star Wars,Droids Battle Pack
@@ -7550,12 +7622,12 @@ set_id,year,pieces,t1,descr
 7688-1,2010,105,Town,Sports Plane
 7690-1,2007,757,Space,MB-01 Eagle Command Base
 7691-1,2007,425,Space,ETX Alien Mothership Assault
-7692-1,2007,416,Space,MX-71 Recon Dropship
-7693-1,2007,236,Space,ETX Alien Strike
-7694-1,2007,87,Space,MT-31 Trike
-7695-1,2007,49,Space,MX-11 Astro Fighter
+7692-1,2007,418,Space,MX-71 Recon Dropship
+7693-1,2007,238,Space,ETX Alien Strike
+7694-1,2007,89,Space,MT-31 Trike
+7695-1,2007,56,Space,MX-11 Astro Fighter
 7696-1,2011,107,Town,Commuter Jet
-7697-1,2007,364,Space,MT-51 Claw-Tank Ambush
+7697-1,2007,366,Space,MT-51 Claw-Tank Ambush
 7699-1,2007,632,Space,MT-101 Armored Drilling Unit
 7700-1,2006,163,Exo-Force,Stealth Hunter
 770-1,1976,142,Legoland,Rescue Set
@@ -8042,7 +8114,7 @@ set_id,year,pieces,t1,descr
 8050-1,1982,141,Technic,Universal Building Set
 805-1,1986,62,Universal Building Set,Extra Bricks Gray
 8051-1,2010,473,Technic,Motorbike
-8052-1,2010,686,Technic,Container Truck
+8052-1,2010,685,Technic,Container Truck
 8053-1,2010,1288,Technic,Mobile Crane
 8054-1,1989,196,Technic,Universal Building Set
 8055-1,1986,186,Technic,Universal Building Set with Motor
@@ -8082,7 +8154,7 @@ set_id,year,pieces,t1,descr
 8086-1,2010,267,Star Wars,Droid Tri-Fighter
 8087-1,2010,296,Star Wars,TIE Defender
 8088-1,2010,395,Star Wars,ARC-170 Starfighter
-8089-1,2010,294,Star Wars,Hoth Wampa Cave
+8089-1,2010,296,Star Wars,Hoth Wampa Cave
 8090-1,1982,267,Technic,TECHNIC Universal Set
 809-1,1986,38,Universal Building Set,Doors and Windows
 8091-1,2010,175,Star Wars,Republic Swamp Speeder - Limited Edition
@@ -8248,7 +8320,7 @@ set_id,year,pieces,t1,descr
 8246-1,1999,46,Technic,Hydro Racer / Swamp Boat
 8247-1,1999,43,Technic,Road Rebel / Buggy Racer
 8248-1,1998,227,Technic,Forklift
-8250-1,1997,377,Technic,Search Sub [No CD]
+8250-1,1997,370,Technic,Search Sub [No CD]
 8251-1,1999,88,Technic,Sonic Cycle / Motorbike
 8252-1,1999,168,Technic,Beach Buster / Police Car
 8253-1,1999,210,Technic,Fire Helicopter
@@ -8433,7 +8505,7 @@ set_id,year,pieces,t1,descr
 8492-1,2008,58,Racers,Mud Hopper
 8493-1,2008,81,Racers,Red Ace
 8494-1,2008,268,Racers,Ring of Fire
-8495-1,2008,501,Racers,Crosstown Craze
+8495-1,2008,503,Racers,Crosstown Craze
 8496-1,2008,510,Racers,Desert Hammer
 8500-1,1999,33,Technic,Torch / Fire Slizer
 850-1,1977,216,Technic,Fork lift truck
@@ -8544,7 +8616,7 @@ set_id,year,pieces,t1,descr
 851317-1,2014,0,Gear,LEGO® Star Wars™ Boba Fett™ Magnet
 851318-1,2014,0,Gear,Sir Fangar Claw & Shield
 851320-1,2014,0,Gear,LEGO® Minifigure Notebooks
-851324-1,2014,0,Gear,Dolphin Bag Charm
+851324-1,2014,4,Gear,Dolphin Bag Charm
 851325-1,2014,0,Gear,Jungle Playmat
 851335-1,2015,0,Gear,Ninja Sword
 851336-1,2015,0,Gear,Ninja Fork Weapon
@@ -9382,6 +9454,7 @@ set_id,year,pieces,t1,descr
 9-1,1978,116,Universal Building Set,Universal Building Set
 910-1,1976,318,Universal Building Set,Universal Building Set
 911-1,1976,401,Universal Building Set,Universal Building Set
+911509-1,2015,20,Star Wars,Imerial Shooter
 912-1,1976,471,Universal Building Set,Universal Building Set
 914-1,1969,10,Classic,"Windows, Red"
 914-2,1969,10,Classic,"Windows, White"
@@ -10022,7 +10095,7 @@ comcon020-1,2012,1,Super Heroes,Super Heroes Unite - Shazam Captain Marvel - San
 comcon021-1,2012,5,Super Heroes,Super Heroes Unite - Phoenix Jean Gray - San Diego Comic-Con 2012 Exclusive
 comcon022-1,2012,1,Super Heroes,Super Heroes Unite - Bizarro - San Diego Comic-Con 2012 Exclusive
 comcon023-1,2012,3,Super Heroes,Super Heroes Unite - Venom - San Diego Comic-Con 2012 Exclusive
-comcon024-1,2012,110,Star Wars,Luke Skywalker's Landspeeder - Mini - New York Comic-Con 2012 Exclusive
+comcon024-1,2012,110,Star Wars,Luke Skywalker''s Landspeeder - Mini - New York Comic-Con 2012 Exclusive
 comcon025-1,2012,0,Teenage Mutant Ninja Turtles,Shadow Leonardo - New York Comic-Con 2012 Exclusive
 comcon026-1,2012,0,Teenage Mutant Ninja Turtles,Kraang - New York Comic-Con 2012 Exclusive
 comcon027-1,2013,0,Super Heroes,Spiderwoman - San Diego Comic-Con 2013 Exclusive
@@ -10033,17 +10106,19 @@ comcon031-1,2013,6,The Hobbit and Lord of the Rings,Azog - San Diego Comic-Con 2
 comcon032-1,2013,123,Star Wars,JEK-14 Mini Stealth Starfighter - San Diego Comic-Con 2013 Exclusive
 comcon033-1,2013,130,The Hobbit and Lord of the Rings,Micro Scale Bag End - San Diego Comic-Con 2013 Exclusive
 comcon034-1,2014,145,Super Heroes,Rocket Raccoon’s Warbird
+comcon035-1,2014,8,Super Heroes,The Collector - San Diego Comic-Con 2014 Exclusive
 comcon037-1,2014,151,Super Heroes,Batman Classic TV Series Batmobile
 comcon038-1,2014,5,The Hobbit and Lord of the Rings,Bard the Bowman
 comcon039-1,2014,127,Star Wars,The Ghost Starship
 comcon042-1,2014,1,Bionicle,Tahu Mask - New York Comic-Con 2014 Exclusive
+comcon046-1,2015,5,Super Heroes,All New Captain America (Sam Wilson) - San Diego Comic-Con 2015 Exclusive
 Concord-1,2009,69,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, Concord Mills, Concord, NC"
 CostaMesa-1,2011,3,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, South Coast Plaza, Costa Mesa, CA"
 D100340-1,2010,0,Mindstorms,LogIT Sensor Adapter
 Dallas-1,2009,92,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, NorthPark Center, Dallas, TX"
 DC1-1,2006,13,Super Heroes,Commemorative Limited Edition Batman Announcement
 DCSHDVD1-1,2015,5,Gear,Justice League vs Bizarro League DVD/Blu-Ray
-DesPeres-1,2013,1,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, West County Center, Des Peres, MO"
+DesPeres-1,2013,14,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, West County Center, Des Peres, MO"
 DKAtlantis-1,2010,157,Books,Lego Brickmaster Atlantis (Hardcover)
 DKBATMANVD-1,2012,0,Gear,Batman: The Visual Dictionary
 DKCastle,2009,-1,Books,Lego Brickmaster Castle (Hardcover)
@@ -10378,7 +10453,7 @@ lwp03-1,2010,7,Other,LEGO World Denmark Puzzle Promo 2010
 lwp04-1,2011,7,Other,LEGO World Denmark Puzzle Promo 2011
 lwp05-1,2012,7,Other,LEGO World Denmark Puzzle Promo 2012
 lwp06-1,2013,7,Other,LEGO World Denmark Puzzle Promo 2013
-Lynnwood-1,2012,1,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, Alderwood Mall, Lynnwood, WA"
+Lynnwood-1,2012,8,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, Alderwood Mall, Lynnwood, WA"
 Maine-1,1999,0,Town,Maine Space Grant Consortium Promotional Astronaut Polybag
 makepromo-1,2003,0,Creator,Make and Create Basic Set (Toyfair Nuernberg Promotion)
 Manchester-1,2012,12,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, Manchester, UK"
@@ -10436,6 +10511,8 @@ Stratford-1,2012,15,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, We
 Sunrise-1,2011,15,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, Sawgrass Mills, Sunrise, FL"
 sw117promo-1,2005,2,Star Wars,Darth Vader Polybag - 56. International Toy Fair Nuernberg (N├╝rnberg)
 sw218promo-1,2009,2,Star Wars,Darth Vader 10 Year Anniversary Promotional Fig polybag
+SW911508-1,2015,20,Star Wars,Mini Slave 1
+SWCOMIC1-1,2015,23,Star Wars,X-Wing
 SWDVDBD-1,2011,0,Gear,The Padawan Menace
 swminifigs-1,2000,4,Star Wars,Star Wars Minifig Packs 4-Pack
 SWMP-1,2005,5461,Star Wars,Star Wars / M&M Mosaic - Promo Set
@@ -10452,6 +10529,11 @@ TRU01-1,2002,37,Harry Potter,Harry Potter Quidditch Tower (TRU Event Exclusive)
 TRUBATSIGNAL-1,2014,19,Super Heroes,Batman Bat-Signal
 TRUGHOST-1,2014,42,Star Wars,Rebel Micro Ghost
 TRUJOKERMECH-1,2013,42,Super Heroes,The Joker Mini Mech Bot
+TRUKAYAK-1,2015,18,Town,Kayak
+TRUNINJAGO-1,2015,18,Ninjago,Micro Shinto Shrine
+TRUNINJAGO-2,2015,28,Ninjago,Micro Electromech Robot
+TRUNINJAGO-3,2015,18,Ninjago,Micro Kai's Fighter Jet
+TRUNINJAGO-4,2015,29,Ninjago,Micro Morro Dragon
 TRUXWINGTIE-1,2014,2,Star Wars,"TRU X-Wing Fighter &amp; TIE Fighter (May 3, 2014)"
 tsuper-1,1991,3,Technic,Technic Super Set
 Vancouver-1,2012,-1,LEGO Brand Store,"LEGO Store Grand Opening Exclusive Set, Oakridge Centre, Vancouver, BC, Canada"
