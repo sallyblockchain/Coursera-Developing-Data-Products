@@ -15,8 +15,8 @@ shinyUI(
                 sliderInput("timeline", 
                             "Timeline:", 
                             min = 1950,
-                            max = 2015,
-                            value = c(1996, 2015)),
+                            max = 2016,
+                            value = c(1996, 2014)),
                 sliderInput("pieces", 
                             "Number of Pieces:",
                             min = -1,
@@ -91,6 +91,5 @@ shinyUI(
                    includeMarkdown("about.md")
                  )
         ) # end of "About" tab panel
-    )
-  
+    )  
 )
