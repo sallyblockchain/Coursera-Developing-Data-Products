@@ -9,18 +9,27 @@ library(rCharts)
 
 # Read data
 data <- fread("./data/sets.csv")
+themes_data <- fread("./data/themes.csv")
+
+#data <- fread("https://m.rebrickable.com/media/downloads/sets.csv")
 head(data)
-setnames(data, "t1", "theme")
-setnames(data, "descr", "name")
-setnames(data, "set_id", "setId")
+colnames(data) # set_id, name, year, theme_id, num_parts
+setnames(data, "set_num", "setId")
+setnames(data, "theme_id", "theme")
+setnames(data, "num_parts", "pieces")
+data$theme <- sapply(data$theme, function (x) 
+                    if(is.na(themes_data[x]$parent_id)) { 
+                        themes_data[x]$name
+                    } else { themes_data[themes_data[x]$parent_id]$name })
+
 # data$miniFigure <- as.numeric(data$theme=="Collectible Minifigures")
 # Exploratory data analysis
 sum(is.na(data)) # 0
-length(unique(data$setId)) # 10691
-table(data$year) # 1950 - 2016
-length(table(data$year)) # 67
+length(unique(data$setId)) # 11438
+table(data$year) # 1950 - 2017
+length(table(data$year)) # 66
 years <- sort(unique(data$year))
-length(table(data$theme)) # 104
+length(table(data$theme)) # 129
 min(data$pieces) # -1
 max(data$pieces) # 5922
 themes <- sort(unique(data$theme))

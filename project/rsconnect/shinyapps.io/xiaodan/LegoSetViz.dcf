@@ -1,0 +1,11 @@
+name: legosetviz
+title: LegoSetViz
+account: xiaodan
+server: shinyapps.io
+appId: 53795
+bundleId: 727643
+url: https://xiaodan.shinyapps.io/LegoSetViz/
+when: 1488267421.98375
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/old_sets.csv|data/old_sets2.csv

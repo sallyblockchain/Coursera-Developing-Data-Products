@@ -5,3 +5,5 @@
 .RData
 *.Rproj
 shinyapp
+project/data/old_sets.csv
+project/data/old_sets2.csv

@@ -16,12 +16,12 @@ shinyServer(
         
     })
     
-#     getPage<-function(url) {
-#         return(tags$iframe(src = url, 
-#                            style="width:100%;",  
-#                            frameborder="0", id="iframe", 
-#                            height = "500px"))
-#     }
+    # getPage<-function(url) {
+    #      return(tags$iframe(src = url, 
+    #                         style="width:100%;",  
+    #                         frameborder="0", id="iframe", 
+    #                         height = "500px"))
+    #  }
     
     openPage <- function(url) {
         return(tags$a(href=url, "Click here!", target="_blank"))
@@ -38,7 +38,7 @@ shinyServer(
         # was loaded over HTTPS, but requested an insecure resource 'http://brickset.com/sets/'. 
         # This request has been blocked; the content must be served over HTTPS.
         #isolate(getPage(paste("//brickset.com/sets/", 
-        #                       input$setid, sep="")))  
+        #                     input$setid, sep="")))  
     })
     
     
