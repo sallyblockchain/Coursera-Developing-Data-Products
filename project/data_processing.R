@@ -25,7 +25,7 @@ data$theme <- sapply(data$theme, function (x)
 # data$miniFigure <- as.numeric(data$theme=="Collectible Minifigures")
 # Exploratory data analysis
 sum(is.na(data)) # 0
-length(unique(data$setId)) # 11438
+length(unique(data$setId)) # 11486
 table(data$year) # 1950 - 2017
 length(table(data$year)) # 66
 years <- sort(unique(data$year))

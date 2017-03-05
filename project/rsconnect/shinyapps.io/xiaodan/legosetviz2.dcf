@@ -1,0 +1,11 @@
+name: legosetviz2
+title: LegoSetViz
+account: xiaodan
+server: shinyapps.io
+appId: 161268
+bundleId: 734211
+url: https://xiaodan.shinyapps.io/legosetviz2/
+when: 1488680423.73764
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/.DS_Store|data/old_sets.csv|data/old_sets2.csv

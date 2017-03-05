@@ -24,12 +24,18 @@ shinyUI(
                             value = c(271, 2448) 
                 ),
                             #format = "####"),
-                uiOutput("themesControl"), # the id
                 actionButton(inputId = "clearAll", 
                              label = "Clear selection", 
                              icon = icon("square-o")),
-                actionButton(inputId = "selectAll", 
-                             label = "Select all", 
+                actionButton(inputId = "selectAll",
+                             label = "Select all",
+                             icon = icon("check-square-o")),
+                uiOutput("themesControl"), # the id
+                actionButton(inputId = "clearAll",
+                             label = "Clear selection",
+                             icon = icon("square-o")),
+                actionButton(inputId = "selectAll",
+                             label = "Select all",
                              icon = icon("check-square-o"))
         
              ),

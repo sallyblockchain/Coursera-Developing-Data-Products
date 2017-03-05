@@ -16,10 +16,10 @@ shinyServer(
         
     })
     
-    # getPage<-function(url) {
-    #      return(tags$iframe(src = url, 
-    #                         style="width:100%;",  
-    #                         frameborder="0", id="iframe", 
+    # getPage <- function(url) {
+    #      return(tags$iframe(src = url,
+    #                         style="width:100%;",
+    #                         frameborder="0", id="iframe",
     #                         height = "500px"))
     #  }
     
@@ -37,8 +37,8 @@ shinyServer(
         # Mixed Content: The page at 'https://xiaodan.shinyapps.io/LegoDatasetVisualization/' 
         # was loaded over HTTPS, but requested an insecure resource 'http://brickset.com/sets/'. 
         # This request has been blocked; the content must be served over HTTPS.
-        #isolate(getPage(paste("//brickset.com/sets/", 
-        #                     input$setid, sep="")))  
+        # isolate(getPage(paste("//brickset.com/sets/", 
+        #                      input$setid, sep="")))  
     })
     
     
