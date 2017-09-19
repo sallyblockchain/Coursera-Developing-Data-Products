@@ -3,9 +3,9 @@ title:
 account: xiaodan
 server: shinyapps.io
 appId: 35833
-bundleId: 734213
+bundleId: 987387
 url: https://xiaodan.shinyapps.io/LegoDatasetVisualization/
-when: 1488680741.24376
+when: 1505807149.41816
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: data/.DS_Store

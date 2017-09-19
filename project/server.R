@@ -6,7 +6,7 @@ themes <- sort(unique(data$theme))
 
 # Shiny server
 shinyServer(
-  function(input, output) {
+  function(input, output, session) {
     output$setid <- renderText({input$setid})
     
     output$address <- renderText({
@@ -45,25 +45,63 @@ shinyServer(
     # Initialize reactive values
     values <- reactiveValues()
     values$themes <- themes
-    
+
+    # Add observer on select-all button
+    # The following approach generates bugs when clearing partial selections
+    # observe({
+    #     if(input$selectAllTop == 0) return()
+    #     values$themes <- themes
+    # })
+    # observe({
+    #     if(input$selectAllBottom == 0) return()
+    #     values$themes <- themes
+    # })
+    observe({
+        if(input$selectAllTop > 0) {
+            updateCheckboxGroupInput(session=session, inputId="themes", 
+                                     choices=themes, selected=themes)
+            values$themes <- themes
+        }
+    })
+    observe({
+        if(input$selectAllBottom > 0) {
+            updateCheckboxGroupInput(session=session, inputId="themes", 
+                                     choices=themes, selected=themes)
+            values$themes <- themes
+        }
+    })
+
+    # Add observer on clear-all button
+    # The following approach generates bugs when clearing partial selections
+    #observe({
+    #    if(input$clearAllTop == 0) return()
+    #    values$themes <- NULL # or use c()
+    #})
+    #observe({
+    #    if(input$clearAllBottom == 0) return()
+    #    values$themes <- NULL # or use c()
+    #})
+    observe({
+        if(input$clearAllTop > 0) {
+            updateCheckboxGroupInput(session=session, inputId="themes", 
+                                     choices=themes, selected=NULL)
+            values$themes <- c()
+        }
+    })
+    observe({
+        if(input$clearAllBottom > 0) {
+            updateCheckboxGroupInput(session=session, inputId="themes", 
+                                     choices=themes, selected=NULL)
+            values$themes <- c()
+        }
+    })
+
     # Create event type checkbox
     output$themesControl <- renderUI({
         checkboxGroupInput('themes', 'LEGO Themes:', 
                            themes, selected = values$themes)
     })
     
-    # Add observer on select-all button
-    observe({
-        if(input$selectAll == 0) return()
-        values$themes <- themes
-    })
-    
-    # Add observer on clear-all button
-    observe({
-        if(input$clearAll == 0) return()
-        values$themes <- c() # empty list
-    })
-
     # Prepare dataset
     dataTable <- reactive({
         groupByTheme(data, input$timeline[1], 

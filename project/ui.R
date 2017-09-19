@@ -24,20 +24,19 @@ shinyUI(
                             value = c(271, 2448) 
                 ),
                             #format = "####"),
-                actionButton(inputId = "clearAll", 
+                actionButton(inputId = "clearAllTop", 
                              label = "Clear selection", 
                              icon = icon("square-o")),
-                actionButton(inputId = "selectAll",
+                actionButton(inputId = "selectAllTop",
                              label = "Select all",
                              icon = icon("check-square-o")),
                 uiOutput("themesControl"), # the id
-                actionButton(inputId = "clearAll",
+                actionButton(inputId = "clearAllBottom",
                              label = "Clear selection",
                              icon = icon("square-o")),
-                actionButton(inputId = "selectAll",
+                actionButton(inputId = "selectAllBottom",
                              label = "Select all",
                              icon = icon("check-square-o"))
-        
              ),
              mainPanel(
                  tabsetPanel(
